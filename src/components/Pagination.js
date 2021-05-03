@@ -1,8 +1,9 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Pagination = () => {
   return (
-    <>
+    <div className="pagination d-flex justify-content-center">
       <div>
         <ul className="pagination">
           <li className="page-item disabled">
@@ -42,7 +43,7 @@ const Pagination = () => {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   )
 }
 
