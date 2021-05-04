@@ -1,5 +1,4 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { Navbar } from './../../node_modules/react-bootstrap'
 
 const headerStyle = {
