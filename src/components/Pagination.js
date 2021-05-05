@@ -1,45 +1,42 @@
 import React from 'react'
 
-const Pagination = () => {
+const Pagination = ({ count, pathsPerPage, currentPage, setPage }) => {
+  const handleClick = (page) => {
+    return () => {
+      setPage(function (prevData) {
+        return page
+      })
+    }
+  }
+
+  let pageList = []
+  for (let i = 0; i <= count / pathsPerPage; i++) {
+    pageList.push(i)
+  }
+
   return (
     <div className="pagination d-flex justify-content-center">
       <div>
         <ul className="pagination">
-          <li className="page-item disabled">
-            <a className="page-link" href="#">
-              &laquo;
-            </a>
-          </li>
-          <li className="page-item active">
-            <a className="page-link" href="#">
-              1
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              2
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              3
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              4
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              5
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              &raquo;
-            </a>
-          </li>
+          {pageList.map((page) => {
+            if (page === currentPage) {
+              return (
+                <li className="page-item active" key={page}>
+                  <button className="page-link" onClick={handleClick(page)}>
+                    {page + 1}
+                  </button>
+                </li>
+              )
+            } else {
+              return (
+                <li className="page-item" key={page}>
+                  <button className="page-link" onClick={handleClick(page)}>
+                    {page + 1}
+                  </button>
+                </li>
+              )
+            }
+          })}
         </ul>
       </div>
     </div>
