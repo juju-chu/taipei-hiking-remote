@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/taipei-hiking-remote/static/css/main.7156c54d.chunk.css",
+    "main.js": "/taipei-hiking-remote/static/js/main.cfe9c222.chunk.js",
+    "main.js.map": "/taipei-hiking-remote/static/js/main.cfe9c222.chunk.js.map",
+    "runtime-main.js": "/taipei-hiking-remote/static/js/runtime-main.69d159c1.js",
+    "runtime-main.js.map": "/taipei-hiking-remote/static/js/runtime-main.69d159c1.js.map",
+    "static/css/2.a3f681c2.chunk.css": "/taipei-hiking-remote/static/css/2.a3f681c2.chunk.css",
+    "static/js/2.e256b0f8.chunk.js": "/taipei-hiking-remote/static/js/2.e256b0f8.chunk.js",
+    "static/js/2.e256b0f8.chunk.js.map": "/taipei-hiking-remote/static/js/2.e256b0f8.chunk.js.map",
+    "static/js/3.7101d138.chunk.js": "/taipei-hiking-remote/static/js/3.7101d138.chunk.js",
+    "static/js/3.7101d138.chunk.js.map": "/taipei-hiking-remote/static/js/3.7101d138.chunk.js.map",
+    "index.html": "/taipei-hiking-remote/index.html",
+    "service-worker.js": "/taipei-hiking-remote/service-worker.js",
+    "service-worker.js.map": "/taipei-hiking-remote/service-worker.js.map",
+    "static/css/2.a3f681c2.chunk.css.map": "/taipei-hiking-remote/static/css/2.a3f681c2.chunk.css.map",
+    "static/css/main.7156c54d.chunk.css.map": "/taipei-hiking-remote/static/css/main.7156c54d.chunk.css.map",
+    "static/js/2.e256b0f8.chunk.js.LICENSE.txt": "/taipei-hiking-remote/static/js/2.e256b0f8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.69d159c1.js",
+    "static/css/2.a3f681c2.chunk.css",
+    "static/js/2.e256b0f8.chunk.js",
+    "static/css/main.7156c54d.chunk.css",
+    "static/js/main.cfe9c222.chunk.js"
+  ]
+}
