@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const searchStyle = {
   padding: '100px 0 0 24px',
-  width: '400px',
+  width: '200px',
 }
 
 const Search = ({ setKeyword }) => {
