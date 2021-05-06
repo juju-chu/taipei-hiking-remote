@@ -3,7 +3,7 @@ import Path from './Path'
 
 const Paths = ({ pathList }) => {
   return (
-    <div className="pathList d-flex flex-wrap justify-content-center p-5">
+    <div className="pathList d-flex flex-wrap justify-content-center p-2">
       {pathList.map((path) => {
         const { _id: id, 步道名稱, 行政區, 環境特色 } = path
         return (
