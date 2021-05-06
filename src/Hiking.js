@@ -29,7 +29,7 @@ const Hiking = () => {
     <>
       <Header></Header>
       <div className="container">
-        <div className="d-flex">
+        <div className="search">
           <Search setKeyword={setKeyword} />
         </div>
         <Paths pathList={data}></Paths>
