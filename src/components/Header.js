@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className="header position-fixed" style={headerStyle}>
       <Navbar className="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" href="/taipei-hiking-remote">
           台北市健行步道
         </a>
       </Navbar>
