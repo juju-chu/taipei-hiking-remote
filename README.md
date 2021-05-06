@@ -6,6 +6,7 @@
 
 - 總覽台北市各區健行步道
 - 可搜尋特定行政區的健行步道
+- 可點擊看完整資訊
 
 ## 電腦版：
 
@@ -13,4 +14,8 @@
 
 ## iPhone X:
 
-![image](https://github.com/juju-chu/taipei-hiking-remote/blob/master/public/iPhone%20X.png)
+![image](https://github.com/juju-chu/taipei-hiking-remote/blob/master/public/iPhone%20X.png?raw=true)
+
+## iPad Pro:
+
+![image](https://github.com/juju-chu/taipei-hiking-remote/blob/master/public/iPad%20Pro.png?raw=true)
