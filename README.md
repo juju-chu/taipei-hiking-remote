@@ -4,9 +4,16 @@
 
 ## 功能
 
-- 總覽台北市各區健行步道
-- 可搜尋特定行政區的健行步道
-- 可點擊看完整資訊
+1. 總覽台北市各區健行步道
+2. 可搜尋特定行政區的健行步道
+3. 可點擊看完整資訊
+4. 支援 RWD（Responsive Web Design）
+
+## 技能
+1. 透過 create-react-app 建立 React 開發環境
+2. 透過 fetch API 使用「臺北市資料大平臺」的臺北市健走步道資料
+3. Bootstrap 框架
+4. React Bootsrap
 
 ## 電腦版：
 
