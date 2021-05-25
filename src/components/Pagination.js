@@ -14,50 +14,60 @@ const Pagination = ({ count, pathsPerPage, currentPage, setPage }) => {
     pageList.push(i)
   }
 
-  return (
-    <div className="pagination d-flex justify-content-center">
-      <div>
-        <ul className="pagination">
-          <li className={'page-item' + (currentPage === 0 ? ' disabled' : '')}>
-            <button
-              className="page-link"
-              onClick={handleClick(currentPage - 1)}
+  if (pageNumber) {
+    return (
+      <div className="pagination d-flex justify-content-center">
+        <div>
+          <ul className="pagination">
+            <li
+              className={'page-item' + (currentPage === 0 ? ' disabled' : '')}
             >
-              &laquo;
-            </button>
-          </li>
-
-          {pageList.map((page) => {
-            return (
-              <li
-                className={
-                  'page-item' + (page === currentPage ? ' active' : '')
-                }
-                key={page}
+              <button
+                className="page-link"
+                onClick={handleClick(currentPage - 1)}
               >
-                <button className="page-link" onClick={handleClick(page)}>
-                  {page + 1}
-                </button>
-              </li>
-            )
-          })}
+                &laquo;
+              </button>
+            </li>
 
-          <li
-            className={
-              'page-item' + (currentPage < pageNumber - 1 ? '' : ' disabled')
-            }
-          >
-            <button
-              className="page-link"
-              onClick={handleClick(currentPage + 1)}
+            {pageList.map((page) => {
+              return (
+                <li
+                  className={
+                    'page-item' + (page === currentPage ? ' active' : '')
+                  }
+                  key={page}
+                >
+                  <button className="page-link" onClick={handleClick(page)}>
+                    {page + 1}
+                  </button>
+                </li>
+              )
+            })}
+
+            <li
+              className={
+                'page-item' + (currentPage < pageNumber - 1 ? '' : ' disabled')
+              }
             >
-              &raquo;
-            </button>
-          </li>
-        </ul>
+              <button
+                className="page-link"
+                onClick={handleClick(currentPage + 1)}
+              >
+                &raquo;
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  )
+    )
+  } else {
+    return (
+      <div className="d-flex justify-content-center">
+        <div>查無路徑</div>
+      </div>
+    )
+  }
 }
 
 export default Pagination
