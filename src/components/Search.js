@@ -5,7 +5,7 @@ const searchStyle = {
   width: '200px',
 }
 
-const Search = ({ setKeyword }) => {
+const Search = ({ setKeyword, setPage }) => {
   const [word, setWord] = useState('')
   function keywordChange(e) {
     setWord(e.target.value)
@@ -14,6 +14,7 @@ const Search = ({ setKeyword }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     setKeyword(word)
+    setPage(0)
   }
 
   return (

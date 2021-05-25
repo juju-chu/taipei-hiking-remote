@@ -30,7 +30,7 @@ const Hiking = () => {
       <Header></Header>
       <div className="container">
         <div className="search">
-          <Search setKeyword={setKeyword} />
+          <Search setKeyword={setKeyword} setPage={setPage} />
         </div>
         <Paths pathList={data}></Paths>
         <Pagination
