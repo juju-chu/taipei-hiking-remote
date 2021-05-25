@@ -8,9 +8,9 @@ const Pagination = ({ count, pathsPerPage, currentPage, setPage }) => {
       })
     }
   }
-  const pageNumber = Math.floor(count / pathsPerPage)
+  const pageNumber = Math.ceil(count / pathsPerPage)
   let pageList = []
-  for (let i = 0; i <= pageNumber; i++) {
+  for (let i = 0; i < pageNumber; i++) {
     pageList.push(i)
   }
 
@@ -44,7 +44,7 @@ const Pagination = ({ count, pathsPerPage, currentPage, setPage }) => {
 
           <li
             className={
-              'page-item' + (currentPage < pageNumber ? '' : ' disabled')
+              'page-item' + (currentPage < pageNumber - 1 ? '' : ' disabled')
             }
           >
             <button
