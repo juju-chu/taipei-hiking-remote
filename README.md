@@ -1,6 +1,12 @@
 # 台北市健行步道
 
+網頁位址：https://juju-chu.github.io/taipei-hiking-remote/
+
 資料來源：[臺北市資料大平臺](https://data.taipei/#/dataset/detail?id=fde2a190-8299-4f70-9a1f-6c223109b512)
+
+實作解析：https://jujupp.medium.com/react-專案-台北市健行步道-實作解析-dbf283f17a79
+
+心得文：https://jujupp.medium.com/react-專案-台北市健行步道-556f32013776
 
 ## 功能
 
